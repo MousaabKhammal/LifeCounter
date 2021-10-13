@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.500684" />
+
+    <ImageButton
+        android:id="@+id/livetwotoone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_baseline_arrow_upward_24"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@android:color/holo_red_dark" />
+
+    <ImageButton
+        android:id="@+id/liveonetotwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_baseline_arrow_downward_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:tint="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/p1poissonmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#D3D3D3"
+        android:text="P+"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p1poissonless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#D3D3D3"
+        android:text="P-"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p2poissonmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D3D3D3"
+        android:text="P+"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/p2poissonless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D3D3D3"
+        android:text="P-"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/p1lifemore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintBottom_toTopOf="@+id/livetwotoone"
+        app:layout_constraintEnd_toEndOf="@+id/p1poissonmore"
+        app:layout_constraintStart_toStartOf="@+id/p1poissonmore"
+        app:layout_constraintTop_toBottomOf="@+id/p1poissonmore"
+        app:tint="@android:color/holo_red_dark" />
+
+    <ImageButton
+        android:id="@+id/p1lifeless"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        app:layout_constraintBottom_toTopOf="@+id/livetwotoone"
+        app:layout_constraintEnd_toEndOf="@+id/p1poissonless"
+        app:layout_constraintStart_toStartOf="@+id/p1poissonless"
+        app:layout_constraintTop_toBottomOf="@+id/p1poissonless"
+        app:tint="@android:color/holo_red_dark" />
+
+    <ImageButton
+        android:id="@+id/p2lifemore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintBottom_toTopOf="@+id/p2poissonmore"
+        app:layout_constraintEnd_toEndOf="@+id/p2poissonmore"
+        app:layout_constraintStart_toStartOf="@+id/p2poissonmore"
+        app:layout_constraintTop_toBottomOf="@+id/liveonetotwo"
+        app:tint="@android:color/holo_red_dark" />
+
+    <ImageButton
+        android:id="@+id/p2lifeless"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        app:layout_constraintBottom_toTopOf="@+id/p2poissonless"
+        app:layout_constraintEnd_toEndOf="@+id/p2poissonless"
+        app:layout_constraintStart_toStartOf="@+id/p2poissonless"
+        app:layout_constraintTop_toBottomOf="@+id/liveonetotwo"
+        app:tint="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/livetwotoone"
+        app:layout_constraintEnd_toStartOf="@+id/p1lifeless"
+        app:layout_constraintStart_toEndOf="@+id/p1lifemore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/p2lifeless"
+        app:layout_constraintStart_toEndOf="@+id/p2lifemore"
+        app:layout_constraintTop_toBottomOf="@+id/liveonetotwo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
